@@ -1,0 +1,55 @@
+body {
+    background-color: #262626;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .box{
+    width: 40vw;
+    height: 75vh;
+    border-radius: 5px;
+    padding: 10px 10px;
+    background-color: rgba(113, 210, 113, 0.533);
+    font-family: "Blinker", sans-serif;
+}
+
+.container .box .result{
+    max-width: 100%;
+    height: 20%;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
+    overflow: auto;
+    margin-bottom: 2vh;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 5%;
+}   
+
+.container .box .button-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3px;
+}
+
+
+.container .box .button-style{
+    height: 10vh;
+    border-radius: 5px;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.container .box .button-style:hover{
+    filter: brightness(95%);
+}
+
+.container .box .button-style:active{
+    filter: brightness(70%);
+}

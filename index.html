@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/CSS/reset.css" />
+    <link rel="stylesheet" href="./src/CSS/index.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+
+
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="result"><h2 id="calculationResult"></h2></div>
+            <div class="button-grid">
+                <button class="button-style" style="background-color: rgb(231, 103, 103);" onclick="clearCalculation()">C</button>
+                <button class="button-style" onclick="addOpenParenthesis()">(</button>
+                <button class="button-style" onclick="addCloseParenthesis()">)</button>
+                <button class="button-style" onclick="sum()">+</button>
+
+                <button class="button-style" onclick="addNumber('1')">1</button>
+                <button class="button-style" onclick="addNumber('2')">2</button>
+                <button class="button-style" onclick="addNumber('3')">3</button>
+                <button class="button-style" onclick="subtraction()">-</button>
+
+                <button class="button-style" onclick="addNumber('4')">4</button>
+                <button class="button-style" onclick="addNumber('5')">5</button>
+                <button class="button-style" onclick="addNumber('6')">6</button>
+                <button class="button-style" onclick="dividedBy()">÷</button>
+
+                <button class="button-style" onclick="addNumber('7')">7</button>
+                <button class="button-style" onclick="addNumber('8')">8</button>
+                <button class="button-style" onclick="addNumber('9')">9</button>
+                <button class="button-style" onclick="multiply()">x</button>
+
+                <button class="button-style" onclick="addNumber('.')">.</button>
+                <button class="button-style" onclick="addNumber('0')">0</button>
+                <button class="button-style" onclick="percentage()">%</button>
+                <button style="background-color: rgb(140, 243, 140);" class="button-style" onclick="calculate()">=</button>
+                
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./src/JS/index.js"></script>
+</body>
+</html>
